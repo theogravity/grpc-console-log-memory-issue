@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package helloPkg;
+
+service HelloService {
+    rpc HelloStream (stream HelloStreamRequest) returns (stream HelloStreamResponse);
+}
+
+enum Command {
+    LOG_ENABLED = 0;
+    LOG_DISABLED = 1;
+}
+
+message HelloStreamRequest {
+    Command command = 1;
+}
+
+message HelloStreamResponse {
+    string text = 1;
+}

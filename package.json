@@ -1,0 +1,33 @@
+{
+  "name": "grpc-console-log-memory-issue",
+  "version": "1.0.0",
+  "description": "Example of where console.log is leaking memory",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node --require babel-register --inspect ./src/start-server.js",
+    "test:log": "node --require babel-register ./src/send-log.js",
+    "test:no-log": "node --require babel-register ./src/send-no-log.js",
+    "test": "./test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theogravity/grpc-console-log-memory-issue.git"
+  },
+  "author": "Theo Gravity <theo@suteki.nu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theogravity/grpc-console-log-memory-issue/issues"
+  },
+  "homepage": "https://github.com/theogravity/grpc-console-log-memory-issue#readme",
+  "dependencies": {
+    "grpc": "1.12.2",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
