@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/theogravity/grpc-console-log-memory-issue#readme",
   "dependencies": {
-    "grpc": "1.12.2",
+    "grpc": "1.24.4",
     "shortid": "^2.2.8"
   },
   "devDependencies": {
